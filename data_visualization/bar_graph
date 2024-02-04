@@ -1,0 +1,17 @@
+"""
+Starter code from tutorials point
+see: https://bit.ly/3x9Z6HU
+"""
+import matplotlib.pyplot as plt
+
+# Dataset creation.
+programming_languages = ['C', 'C++', 'Java', 'Python', 'PHP', "Other", "None"]
+employees_frequency = [23, 17, 35, 29, 12, 5, 38]
+
+# Bar graph creation.
+fig, ax = plt.subplots(figsize=(10, 5))
+plt.bar(programming_languages, employees_frequency)
+plt.title("The number of employees competent in a programming langauge")
+plt.xlabel("Programming languages")
+plt.ylabel("Frequency")
+plt.show()
